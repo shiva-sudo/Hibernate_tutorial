@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Here we need to configure all property 
+  	and mapping the class with hibernate 
+-->
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/HiberDB</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<mapping class ="com.hibernate.HibernateProject.Student"/>
+		<mapping class ="com.hibernate.HibernateProject.Address"/>
+	</session-factory>
+</hibernate-configuration>
