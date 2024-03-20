@@ -11,7 +11,18 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password">root</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		
+		<!--  <property name="hbm2ddl.auto">create</property>
+		
+			*create will create new table every time so we need to 
+			change from.
+				
+			*update - will check if table exist then update otherwise
+			will create new table 
+		-->
+		<property name="hbm2ddl.auto">update</property>
+		
+		
 		<property name="show_sql">true</property>
 		<mapping class ="com.hibernate.HibernateProject.Student"/>
 		<mapping class ="com.hibernate.HibernateProject.Address"/>
