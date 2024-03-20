@@ -26,5 +26,6 @@
 		<property name="show_sql">true</property>
 		<mapping class ="com.hibernate.HibernateProject.Student"/>
 		<mapping class ="com.hibernate.HibernateProject.Address"/>
+		
 	</session-factory>
 </hibernate-configuration>

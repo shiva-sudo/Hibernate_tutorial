@@ -14,7 +14,7 @@ import org.hibernate.cfg.Configuration;
  */
 public class App {
 	public static void main(String[] args) throws IOException {
-		System.out.println("project Started");
+		System.out.println("project Started....");
 		Configuration cfg = new Configuration();
 		cfg.configure("hibernate.cfg.xml");
 		SessionFactory factory = cfg.buildSessionFactory();
