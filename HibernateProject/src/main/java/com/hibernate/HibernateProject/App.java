@@ -42,6 +42,7 @@ public class App {
 		byte[] data = new byte[fis.available()];
 		fis.read(data);
 		adr.setImage(data);
+		
 		Session session = factory.openSession();
 //      session.beginTransaction();
 //      session.save(stud);
